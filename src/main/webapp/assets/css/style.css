@@ -1,0 +1,65 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+img.card-img-top {
+    width: 50%;
+}
+#dslist li {
+    border-bottom: slategray solid 2px;
+    width: 100%;
+    background-color: #f8f8f8;
+    
+}
+#dslist li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+.row.align-items-center {
+    background: white;
+}
+.fixed-size-img {
+    width: 150px; /* Chiều rộng cố định */
+    height: 150px; /* Chiều cao cố định */
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh */
+}
+footer.bg-dark.text-white {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    border-radius: 5px;
+    padding: 20px
+}
+.backgrond-img{
+    background-image: url("assets/imgs/khac/background.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px)
+}
+img.img-fluid.rounded {
+    height: 100px;
+}
+.card.position-relative.border-dark {
+    height: 290px;
+}

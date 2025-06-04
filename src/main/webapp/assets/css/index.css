@@ -1,0 +1,60 @@
+html,body{
+    font-family: 'roboto' , sans-serif ;
+}
+ .option {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+ .option:hover {
+    opacity: 1;
+}
+
+.wrap-option {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ .wrap-option a {
+    display: flex;
+    color: #fff;
+    background: #162e5c ;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+ .wrap-option i {
+    font-size: 12px;
+}
+
+ .wrap-option .icon-cart{
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+     display: flex;
+    color: #fff;
+    background: #162e5c ;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+}
+.head-title {
+    text-decoration: none;
+    color: darkblue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+
+

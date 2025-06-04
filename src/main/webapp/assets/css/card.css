@@ -1,0 +1,30 @@
+/* Định dạng thẻ card */
+.card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .buy-now {
+    position: absolute;
+    bottom: -70px; /* Đặt nút ra ngoài khung nhìn ban đầu */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease; /* Hiệu ứng chuyển động */
+    background-color: transparent; /* Nền trong suốt */
+  }
+  
+  .card:hover .buy-now {
+    bottom: 150px; /* Đặt vị trí khi hover */
+  }
+  .xem-them {
+    position: absolute;
+    bottom: -70px; /* Đặt nút ra ngoài khung nhìn ban đầu */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease; /* Hiệu ứng chuyển động */
+    background-color: orange; /* Nền trong suốt */
+  }
+  .card:hover .xem-them {
+    bottom: 120px; /* Đặt vị trí khi hover */
+  }
+  

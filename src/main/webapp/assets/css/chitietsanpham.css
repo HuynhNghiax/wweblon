@@ -1,0 +1,66 @@
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .price {
+    font-size: 1.2rem;
+    color: red;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .buy-now-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+  }
+  .similar-products img {
+    max-height: 150px;
+  }
+  .similar-products .card {
+    border: none;
+  }
+  .p-comment{
+    background-color: rgb(202, 56, 56);
+    padding:10px;
+    color:white
+}
+.comment-area{
+    margin: 10px;
+    width:97%;
+}
+.com-btn{
+    width: 20%;
+    margin:10px;
+    background-color:rgb(202, 56, 56);
+    color:white;
+}
+.star-rating {
+    display:flex;
+    flex-direction: row-reverse;
+    font-size:1.5em;
+    justify-content:space-around;
+    padding:0 .2em;
+    text-align:center;
+    width:5em;
+  }
+
+  .star-rating input {
+    display:none;
+  }
+
+  .star-rating label {
+    color:#ccc;
+    cursor:pointer;
+  }
+
+  .star-rating :checked ~ label {
+    color:#f90;
+  }
+
+  .star-rating label:hover,
+  .star-rating label:hover ~ label 
+  {
+    color:#fc0;
+  }

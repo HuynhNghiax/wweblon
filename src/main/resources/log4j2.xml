@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <JDBC name="DatabaseAppender" tableName="log">
+            <ConnectionFactory class="com.example.doanltweb.utils.ConnectionFactory" method="getConnection"/>
+            <Column name="user_id" pattern="%X{user_id}"/>
+            <Column name="level" pattern="%level"/>
+            <Column name="time" isEventTimestamp="true"/>
+            <Column name="ip" pattern="%X{ip}"/>
+            <Column name="resource" pattern="%X{resource}"/>
+            <Column name="data_in" pattern="%X{data_in}"/>
+            <Column name="data_out" pattern="%X{data_out}"/>
+        </JDBC>
+
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="DatabaseAppender"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
